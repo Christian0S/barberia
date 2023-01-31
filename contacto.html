@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon" href="imagenes/logo.png" alt="logo">
+        <title>Contactos</title>
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <a href="index.html">
+                    <h1><img class="Logo" src="imagenes/logo.png" /></h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <main>
+                    <section class="contacto-formulario">
+                        <form>
+                            <label for="nombreApellido">Nombre y Apellido</label>
+                            <input type="text" name="" id="nombreApellido"
+                                class="input-padron" required>
+
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" name="" id="correo"
+                                class="input-padron"
+                                required placeholder="email@dominio.com">
+
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" name="" id="telefono"
+                                class="input-padron"
+                                required placeholder="(xxx) xxxx xxx">
+
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="" id="mensaje" cols="70" rows="10"
+                                class="input-padron" required></textarea>
+                            <fieldset>
+                                <legend>¿Como le gustaría que lo contactemos?</legend>
+                                <label for="radio-email"><input type="radio"
+                                        name="contacto" id="radioemail"
+                                        value="email">Correo electrónico</label>
+                                <label for="radio-Whatsap"><input type="radio"
+                                        name="contacto" id="radio-Whatsap"
+                                        value="WhatsApp" checked>WhatsApp</label>
+                                <label for="redio-telfono"><input type="radio"
+                                        name="contacto" id="redio-telfono"
+                                        value="telefono">Teléfono</label>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>¿En cual horario quiere ser atendido?</legend>
+                                <select name="" id="">
+                                    <option value="">Mañana</option>
+                                    <option value="">Tarde</option>
+                                    <option value="">Noche</option>
+                                </select>
+                            </fieldset>
+
+                            <label class="checkbox" for="checkbox"><input
+                                    type="checkbox" name="" id="checkbox" checked>¿Le
+                                gustaría
+                                recibir novedades de la barbería?</label>
+
+                            <input type="submit" value="Enviar" class="enviar">
+                        </form>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Dia</th>
+                                    <th>Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes</td>
+                                    <td>8:00 ~ 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Miércoles</td>
+                                    <td>8:00 ~ 20:00</td>
+                                </tr>
+                                <tr>
+                                    <td>Viernes</td>
+                                    <td>8:00 ~ 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </main>
+                <footer>
+                    <img src="imagenes/logo-blanco.png">
+                    <p class="copyright">&copy Copyright Barbería Alura y el año
+                        2020</p>
+                </footer>
+
+            </body>
+        </html>
